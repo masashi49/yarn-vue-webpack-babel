@@ -1,4 +1,4 @@
-#vue.js + webpac　をシンプルに初めて見る
+#yarn-vue-webpack-babel をシンプルに初めて見る
 
 $ yarn
 
