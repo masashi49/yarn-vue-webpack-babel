@@ -1,0 +1,24 @@
+{
+  "name": "yarn-vue-webpack-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/masashi49/yarn-vue-webpack-babel.git",
+  "author": "山田将史 <shisama94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "save-dev": "^2.0.0",
+    "style-loader": "^0.19.0",
+    "vue": "^2.5.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
