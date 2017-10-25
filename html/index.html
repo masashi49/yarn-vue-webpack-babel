@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
     <title>Document</title>
 </head>
 <body>
 <div id="app">
-    <h1><a href="https://daneden.github.io/animate.css/">animate.cssを使ってみる</a></h1>
-    <p>{{ message }}</p>
-    <p>{{console}}</p>
+    <h1>{{ message }}</h1>
 
-    <ul>
-        <li class="animated bounce">bouncd</li>
-        <li class="animated flash">bouncd</li>
+    <!--h1><a href="https://daneden.github.io/animate.css/">animate.cssを使ってみる</a></h1-->
+    <p>axiosを試します。<br>参考：https://www.webprofessional.jp/fetching-data-third-party-api-vue-axios/</p>
+
+    <div class="columns medium-3" v-for="result in results">
+        <div class="card animated bounce">
+            <div class="card-divider">
+                {{ result.title }}
+            </div>
+            <div class="card-section">
+                <p>{{ result.abstract }}.</p>
+            </div>
+        </div>
+    </div>
+
+    <ul style="display: none">
+        <li class="">bouncd</li>
+        <li class="">bouncd</li>
         <li class="animated pulse">bouncd</li>
         <li class="animated rubberBand">bouncd</li>
         <li class="animated shake">bouncd</li>

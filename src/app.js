@@ -1,10 +1,15 @@
 import Vue from 'vue'
-import console from './component/console'
+import axios from 'axios';
 
 var app = new Vue({
-    el: '#app',
-    data: {
-        message: 'Hello Vue!',
-        console: console(400)
-    }
+  el: '#app',
+  data: {
+    message: 'ニューヨークタイムスAPI',
+    results: []
+  },
+  mounted() {
+    axios.get("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=Mykey")
+    .then(response => {this.results = response.data.results})
+  }
+
 })
